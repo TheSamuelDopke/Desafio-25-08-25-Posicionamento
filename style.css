@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.modal:target {
+    display: flex;
+}
+
+body {
+    background-color: #000A0A;
+}
+
+header {
+    position: fixed;
+    top: 0;
+
+    /*Alinhando verticalmente:*/
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 90%;
+    height: 100px;
+    background-color: #057205;
+
+    border-radius: 0px 0px 5px 5px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#ancora {
+    position: absolute;
+    top: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.material-symbols-outlined {
+    border: 1px solid black;
+    flex: 1 1 auto;
+    max-width: 200px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.material-symbols-outlined:hover > span{
+    display: block;
+}
+
+span > span{
+    display: none;
+    position: absolute;
+    top: 100px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #09ff09;
+}
+
+
+
+span:hover {
+    cursor: pointer;
+    background-color: #0EFE3F;
+}
+
+.backTop {
+    position: fixed;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    bottom: 5px;
+    right: 10px;
+    width: 70px;
+    height: auto;
+    color: white;
+    background-color: #0aa105;
+    z-index: 1;
+}
+
+.backTop:hover {
+    cursor: pointer;
+    background-color: #0ec707;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    /*Deixando o elemento do tamanho total do container*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+main {
+    margin: auto;
+    margin-top: 110px;
+    width: 1000px;
+
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+article {
+    display: flex;
+    color: green;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+article>div {
+    font-size: 2em;
+    padding: 10px;
+
+}
+
+.atlas {
+    color: rgb(36, 57, 173);
+    justify-content: space-between;
+}
+
+.atlas>img {
+    width: 800px;
+}
+
+section {
+    padding-top: 50px;
+
+
+}
+
+.openMsg {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    background-color: rgb(69, 199, 58);
+    font-size: 20px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.modal {
+    /*Deixando o modal do tamanho total da tela!*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-modal {
+    position: relative;
+    width: 500px;
+    height: auto;
+    background-color: rgb(99, 99, 99);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.conteudo-modal>img {
+    width: 100%;
+    height: 300px;
+}
+
+.conteudo-modal h1 {
+    color: rgb(17, 216, 17);
+
+}
+
+.conteudo-modal>div {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+}
+
+.conteudo-modal>div>a {
+    padding: 0px 5px;
+    align-items: center;
+    color: red;
+    background-color: rgb(150, 28, 28);
+}
+
+.div-whatsapp {
+    position: sticky;
+    top: 110px;
+    float: right;
+    right: 15px;
+    color: #09ff09;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.div-whatsapp>div>img {
+    width: 50px;
+    height: 50px;
+}
+
+.div-whatsapp>div>img:hover {
+    cursor: pointer;
+}
